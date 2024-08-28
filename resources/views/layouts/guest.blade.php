@@ -17,7 +17,7 @@
     <body class="font-sans text-gray-900 antialiased">
         <div class="min-h-screen flex flex-col items-center sm:pt-0 bg-gray-100 pb-12">
             <div class="flex flex-col items-center text-center pt-6">
-                <img class="max-w-72 rounded-lg p-2 border-grey border-2 bg-white" src="{{ asset('images/areas-mapping-logo.png') }}" alt="Image">
+                <img class="max-w-72 rounded-lg p-2 border-grey border-2 bg-white" src="{{ asset('images/area-mapping-logo.png') }}" alt="Image">
                 <p class="max-w-[750px] text-left pt-4">The Area Mapping tool is built with openlayers and allows you create, modify and save your geojson data. You can draw your own areas, upload a geojson file or add a geojson object directly to a form field. The data can be previewed and modified in realtime for a better user experience. Log in to give it a go!</p>
             </div>
 
