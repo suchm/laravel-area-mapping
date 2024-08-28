@@ -28,7 +28,7 @@ Generate an encryption key
 ```bash
 php artisan key:generate
 ```
-Add your postgreSQL database configuration to the `.env` file. Update the below details to match you configuration:
+Add your postgreSQL database configuration to the `.env` file. Update the below details to match your configuration:
 
 ```bash
 DB_CONNECTION=pgsql
@@ -58,7 +58,7 @@ Once your local environment is up and running the site should now load
 When your site is ready for production run the following command:
 
 ```bash
-npm run dev
+npm run build
 ```
 ## Usage
 
@@ -69,15 +69,15 @@ Once logged in you will be redirected to the `areas` page which will display a l
 ### Create an area
 
 - Click on the `ADD NEW AREA` button located to the top right of the areas list.
-- You can either draw an area on the map or add geojson data to the form field by directly pasting geojson data into it or uploading a geojson file. A preview will be shown as soon as valid geojson data is added to the form field. 
+- You can either draw an area on the map or add geojson data to the form field by directly pasting the data into it or uploading a geojson file. A preview will be shown as soon as valid geojson data is added to the form field. 
 - The final point of the area must overlap the start point to complete it. Once completed you can click inside the area to enable editing. The area lines can then be dragged and modified. 
-- You then also need to include a `name`, `category` and `valid from` value in the form fields. `description` and `valid to` are optional.
-- Once happy with the area details, hit `Submit` to save it. This will then redirect you back to the `areas` page and display the new area in the list.
+- You also need to include a `name`, `category` and `valid from` value in the form fields. `description` and `valid to` are optional.
+- Once happy with the area details, hit `Submit` to save it. This will redirect you back to the `areas` page and display the new area in the list.
 
 ### Edit an area
 
 - Click the `EDIT` button in the areas list to take you to the `edit` page.
-- Here the area will be prepopulated on the map and the form fields with their stored data.
+- Here the area will be prepopulated on the map and the form fields will display the stored data.
 - Click on the map to edit it and update any of the form fields if necessary.
 - Once happy with the changes click `Submit` and you be redirected to the `areas` page with the updated details displaying in the list.
 
