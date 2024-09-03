@@ -16,6 +16,7 @@ class AreasEdit extends Component
 
     public function mount(Area $area): void
     {
+//        dd(Area $area);
         $this->form->setArea($area);
         $this->categories = Category::pluck('name', 'id');
     }
@@ -31,6 +32,6 @@ class AreasEdit extends Component
 
     public function render()
     {
-        return view('livewire.areas.edit');
+        return view('livewire.areas.edit')->extends('layouts.app');
     }
 }

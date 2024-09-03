@@ -39,8 +39,8 @@ class AreasForm extends Form
         $this->name = $area->name;
         $this->description = $area->description;
         $this->category = $area->category_id;
-        $this->valid_from = $area->valid_from->format('Y-m-d');
-        $this->valid_to = $area->valid_to ? $area->valid_to->format('Y-m-d') : null;
+//        $this->valid_from = $area->valid_from->format('Y-m-d');
+//        $this->valid_to = $area->valid_to ? $area->valid_to->format('Y-m-d') : null;
         $this->in_breaches = $area->in_breaches;
         $this->geojson = $area->geojson;
     }
