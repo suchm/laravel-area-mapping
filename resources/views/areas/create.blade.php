@@ -1,8 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Create Area') }}
-        </h2>
+        {{ __('Create Area') }}
     </x-slot>
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
