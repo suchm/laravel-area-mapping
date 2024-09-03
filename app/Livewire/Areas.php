@@ -24,7 +24,7 @@ class Areas extends Component
 
     public function mount(): void
     {
-        $this->categories = Category::pluck('name', 'id');
+        $this->categories = Category::whereHas('areas')->pluck('name', 'id');
     }
 
     // You need to reset the page when using pagination for it to work

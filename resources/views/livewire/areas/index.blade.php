@@ -77,11 +77,11 @@
                                         {{ $area->description }}
                                     </td>
                                     <td class="px-2 md:px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
-                                        {{ \Carbon\Carbon::parse($area->valid_from)->format('d/m/Y')}}
+                                        {{ $area->valid_from }}
                                     </td>
                                     <td class="px-2 md:px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
                                         @if($area->valid_to)
-                                            {{ \Carbon\Carbon::parse($area->valid_to)->format('d/m/Y')}}
+                                            {{ $area->valid_to }}
                                         @endif
                                     </td>
                                     <td class="px-2 md:px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
