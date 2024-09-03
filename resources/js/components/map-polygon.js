@@ -65,6 +65,7 @@ class GeoJsonMap {
         } catch (e) {
             console.error("Invalid JSON");
             this.source.clear(); // Clear the source if JSON is invalid
+            this.addDrawingInteraction();
             return;
         }
 
@@ -184,6 +185,7 @@ class GeoJsonMap {
     clearMapFeaturesAndGeoJsonData() {
         this.source.clear();
         this.textarea.value = '';
+        this.addDrawingInteraction();
     }
 
     populateFormFieldsFromGeoJson(geoJson) {
