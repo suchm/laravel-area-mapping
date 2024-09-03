@@ -77,11 +77,11 @@
                                         {{ $area->description }}
                                     </td>
                                     <td class="px-2 md:px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
-                                        {{ $area->valid_from }}
+                                        {{ $area->valid_from->format('d/m/Y') }}
                                     </td>
                                     <td class="px-2 md:px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
                                         @if($area->valid_to)
-                                            {{ $area->valid_to }}
+                                            {{ $area->valid_to->format('d/m/Y') }}
                                         @endif
                                     </td>
                                     <td class="px-2 md:px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-900">
