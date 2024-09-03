@@ -17,8 +17,9 @@ class AreaController extends Controller
         return view('areas.create');
     }
 
-    public function edit(Area $area)
+    public function edit($area_id)
     {
+        $area = Area::findorFail($area_id);
         return view('areas.edit', compact('area'));
     }
 }
