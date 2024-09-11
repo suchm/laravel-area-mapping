@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Area extends Model
 {
+    use HasFactory;
+
     protected $guarded = [];
 
     protected $casts = [
